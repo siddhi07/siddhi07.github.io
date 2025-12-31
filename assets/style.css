@@ -12,6 +12,7 @@ nav{display:flex;gap:14px;flex-wrap:wrap}
 .hero-card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
 .tag{color:var(--muted);margin:0 0 6px 0}
 .accent{color:var(--accent)}
+.avatar {width: 160px;height: 160px;border-radius: 50%;object-fit: cover;margin-bottom: 16px;border: 1px solid rgba(255,255,255,0.15);}
 .subtitle{color:var(--muted);margin-top:6px}
 .lead{max-width:60ch}
 .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
