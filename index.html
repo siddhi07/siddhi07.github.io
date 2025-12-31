@@ -1,1 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Data Scientist</title>
+  <meta name="description" content="Data Scientist portfolio: projects, dashboards, ML, NLP, and analytics." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home">YourName</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certificates</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="links">
+        <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
+        <p class="subtitle">Data Scientist • ML/NLP • Analytics & Experimentation</p>
+        <p class="lead">
+          I build end-to-end data products—from messy data and feature pipelines to models,
+          dashboards, and decision-ready insights.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="assets/YourName_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="tag">Current focus</p>
+        <h3>Applied ML + Storytelling</h3>
+        <ul>
+          <li>Recommendation systems</li>
+          <li>Sentiment & text modeling</li>
+          <li>Dashboards (Tableau/Power BI)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        Write 4–6 lines: your niche, tools, and the kind of problems you love.
+        Keep it concrete (impact, scale, domains).
+      </p>
+      <div class="pill-row">
+        <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">PySpark</span>
+        <span class="pill">ML</span><span class="pill">NLP</span><span class="pill">Tableau/Power BI</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Market Basket + Sentiment-Aware Recommendations</h3>
+          <p class="meta">Apriori • BERT sentiment • Dashboard</p>
+          <p>
+            Built a grocery recommendation workflow combining association rules with review sentiment to
+            improve product suggestions and avoid negatively reviewed add-ons.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer">Code</a>
+            <a href="https://your-dashboard-link" target="_blank" rel="noreferrer">Dashboard</a>
+            <a href="https://your-writeup-link" target="_blank" rel="noreferrer">Write-up</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Customer Engagement Modeling</h3>
+          <p class="meta">Features • Ranking/ML • Evaluation</p>
+          <p>
+            Engineered features from transaction behavior and trained models to predict engagement / offer response.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer">Code</a>
+            <a href="https://your-writeup-link" target="_blank" rel="noreferrer">Results</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>License Plate Validation App</h3>
+          <p class="meta">Computer Vision • Validation • Deployment</p>
+          <p>
+            Built a validation pipeline to detect invalid formats and improve data quality for downstream systems.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer">Code</a>
+            <a href="https://demo-link" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs" class="section">
+    <div class="container">
+      <h2>Certificates</h2>
+      <ul class="list">
+        <li><strong>Course/Cert Name</strong> — Provider (Year)</li>
+        <li><strong>Course/Cert Name</strong> — Provider (Year)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="writing" class="section alt">
+    <div class="container">
+      <h2>Writing</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Post title</h3>
+          <p>1–2 lines about what you wrote.</p>
+          <div class="card-links">
+            <a href="https://medium.com/..." target="_blank" rel="noreferrer">Read</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Best way to reach me: <a href="mailto:you@email.com">you@email.com</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="y"></span> Your Name</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
