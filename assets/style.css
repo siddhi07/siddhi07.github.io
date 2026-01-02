@@ -187,3 +187,11 @@ p{color:rgba(233,238,252,.84)}
   *{scroll-behavior:auto}
   .btn, .card{transition:none}
 }
+.section, .card, .hero-image img { opacity: 0; transform: translateY(12px); }
+.reveal { opacity: 1; transform: translateY(0); transition: opacity .6s ease, transform .6s ease; }
+
+@media (prefers-reduced-motion: reduce){
+  .section, .card, .hero-image img { opacity: 1; transform:none; }
+  .reveal { transition:none; }
+}
+
