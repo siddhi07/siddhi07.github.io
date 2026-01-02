@@ -32,7 +32,7 @@ a:hover{opacity:.92;text-decoration:underline}
 
 .container{max-width:1080px;margin:0 auto;padding:0 22px}
 
-/* Topbar */
+/*  Topbar */
 .topbar{
   position:sticky;top:0;z-index:10;
   background:rgba(11,13,18,.72);
