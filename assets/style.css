@@ -166,6 +166,44 @@ p{color:rgba(233,238,252,.84)}
 .card-links{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
 .card-links a{font-weight:600}
 
+
+/* Ruchi style */
+.stack { display: grid; gap: 14px; margin-top: 18px; }
+
+.entry{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.22);
+}
+
+.entry-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.entry h3{ margin: 0; }
+.entry-date{ color: rgba(233,238,252,.65); font-weight:600; }
+.entry-sub{ margin-top: 6px; color: rgba(233,238,252,.78); font-weight:600; }
+.entry-desc{ margin: 10px 0 0; }
+
+.entry-bullets{
+  margin: 10px 0 0 18px;
+  color: rgba(233,238,252,.84);
+}
+
+.entry-links{
+  display:flex;
+  gap:12px;
+  margin-top: 10px;
+  flex-wrap:wrap;
+}
+.entry-links a{ font-weight: 650; }
+
 /* Footer */
 .footer{
   padding:26px 0;
