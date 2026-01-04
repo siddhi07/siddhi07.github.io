@@ -137,60 +137,59 @@
   <div class="container">
     <h2>Projects</h2>
 
-    <div class="stack">
+    <div class="project-grid">
 
-      <div class="entry">
-        <div class="entry-head">
-          <h3>E-commerce Market Basket + Sentiment Recommendations</h3>
-          <span class="entry-date">Apriori • BERT • Dashboard</span>
+      <!-- Project 1 -->
+      <button class="project-tile"
+        data-title="E-commerce Market Basket + Sentiment Recommendations"
+        data-tags="Apriori • BERT • Dashboard"
+        data-desc="Built a sentiment-aware product recommendation system by applying Apriori on 100K+ transactions to generate association rules (support, confidence, lift) and integrating BERT-based review sentiment, improving cross-sell recommendation relevance."
+        data-link1="https://github.com/siddhi07/E-commerce-Product-Recommendations-and-Pattern-Analysis./tree/main"
+        data-link1label="Code"
+        data-link2="https://github.com/siddhi07/E-commerce-Product-Recommendations-and-Pattern-Analysis./blob/main/Dashboard.png"
+        data-link2label="Dashboard"
+        data-link3="https://github.com/siddhi07/E-commerce-Product-Recommendations-and-Pattern-Analysis./blob/main/Team24_Technical_Report.pdf"
+        data-link3label="Write-up">
+        <img src="assets/projects/marketbasket.jpg" alt="E-commerce Market Basket + Sentiment cover" />
+        <div class="tile-overlay">
+          <div class="tile-title">E-commerce Market Basket + Sentiment</div>
+          <div class="tile-sub">Apriori • BERT • Dashboard</div>
         </div>
-        <p class="entry-desc">
-          Built a sentiment-aware product recommendation system by applying Apriori on 100K+ transactions to generate
-          association rules (support, confidence, lift) and integrating BERT-based review sentiment, improving cross-sell
-          recommendation relevance.
-        </p>
-        <div class="entry-links">
-          <a href="https://github.com/siddhi07/E-commerce-Product-Recommendations-and-Pattern-Analysis./tree/main" target="_blank" rel="noreferrer">Code</a>
-          <a href="https://github.com/siddhi07/E-commerce-Product-Recommendations-and-Pattern-Analysis./blob/main/Dashboard.png" target="_blank" rel="noreferrer">Dashboard</a>
-          <a href="https://github.com/siddhi07/E-commerce-Product-Recommendations-and-Pattern-Analysis./blob/main/Team24_Technical_Report.pdf" target="_blank" rel="noreferrer">Write-up</a>
-        </div>
-      </div>
+      </button>
 
-      <div class="entry">
-        <div class="entry-head">
-          <h3>Customer Engagement Analytics — American Express</h3>
-          <span class="entry-date">LightGBM • Feature Engineering</span>
+      <!-- Project 2 -->
+      <button class="project-tile"
+        data-title="Customer Engagement Analytics — American Express"
+        data-tags="LightGBM • Feature Engineering"
+        data-desc="Performed data preprocessing and feature engineering on customer-event and offer data to predict offer acceptance. Used LightGBM to build a high-performance model, improving Click-Through Rate (CTR) prediction. Tasks included data merging, handling categorical features, and optimizing model performance using Python and pandas."
+        data-link1="https://github.com/siddhi07/Customer-Engagement-Analysis"
+        data-link1label="Code"
+        data-link2="https://github.com/siddhi07/Customer-Engagement-Analysis/blob/main/README.md"
+        data-link2label="Write-Up">
+        <img src="assets/projects/amex.jpg" alt="American Express Customer Engagement cover" />
+        <div class="tile-overlay">
+          <div class="tile-title">Customer Engagement — AmEx</div>
+          <div class="tile-sub">LightGBM • Feature Engineering</div>
         </div>
-        <p class="entry-desc">
-          Performed data preprocessing and feature engineering on customer-event and offer data to predict offer acceptance. Used
-          LightGBM to build a high-performance model, improving Click-Through Rate (CTR) prediction. Tasks included data
-          merging, handling categorical features, and optimizing model performance using Python and pandas.
-        </p>
-        <div class="entry-links">
-          <a href="https://github.com/siddhi07/Customer-Engagement-Analysis" target="_blank" rel="noreferrer">Code</a>
-          <a href="https://github.com/siddhi07/Customer-Engagement-Analysis/blob/main/README.md" target="_blank" rel="noreferrer">Write-Up</a>
-        </div>
-      </div>
+      </button>
 
-      <div class="entry">
-        <div class="entry-head">
-          <h3>License Plate Validation App</h3>
-          <span class="entry-date">Django • TensorFlow • EasyOCR</span>
+      <!-- Project 3 -->
+      <button class="project-tile"
+        data-title="License Plate Validation App"
+        data-tags="Django • TensorFlow • EasyOCR"
+        data-desc="Developed a web application using EasyOCR, TensorFlow, and Django to capture and authenticate license plates, achieving 88% accuracy with a dataset of 1,200 images. Used Django for user interaction and Jupyter Notebook for model training and execution."
+        data-link1="https://github.com/yourrepo"
+        data-link1label="Code">
+        <img src="assets/projects/plate.jpg" alt="License Plate Validation cover" />
+        <div class="tile-overlay">
+          <div class="tile-title">License Plate Validation</div>
+          <div class="tile-sub">Django • TensorFlow • EasyOCR</div>
         </div>
-        <p class="entry-desc">
-          Developed a web application using EasyOCR, TensorFlow, and Django to capture and authenticate license plates,
-          achieving 88% accuracy with a dataset of 1,200 images. Used Django for user interaction and Jupyter Notebook for
-          model training and execution.
-        </p>
-        <div class="entry-links">
-          <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer">Code</a>
-        </div>
-      </div>
+      </button>
 
     </div>
   </div>
 </section>
-
 
  
   <section id="certs" class="section">
@@ -223,7 +222,20 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-  
+  <!-- Modal (place once, near the bottom of the page, before </body>) -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close="true"></div>
+
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" aria-label="Close" data-close="true">×</button>
+
+    <h3 id="modalTitle"></h3>
+    <div class="modal-tags" id="modalTags"></div>
+    <p class="modal-desc" id="modalDesc"></p>
+
+    <div class="modal-links" id="modalLinks"></div>
+  </div>
+</div>
 </body>
 </html>
 
