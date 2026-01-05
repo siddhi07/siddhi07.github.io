@@ -282,6 +282,12 @@ p{color:rgba(233,238,252,.84)}
   transform: translateY(-6px);
   border-color: rgba(124,157,255,.35);
 }
+
+.project-tile{
+  display: flex;
+  flex-direction: column;
+}
+
 .project-tile:hover img{
   transform: scale(1.08);
 }
@@ -303,6 +309,7 @@ p{color:rgba(233,238,252,.84)}
   font-weight: 650;
   color: rgba(233,238,252,.65);
 }
+
 
 
 /* Modal */
