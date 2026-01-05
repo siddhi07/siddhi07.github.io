@@ -10,10 +10,14 @@ function type() {
     index++;
     setTimeout(type, 80);
   } else {
-    // let cursor blink a bit, then hide
+    // Start blinking AFTER typing finishes
+    cursor.classList.add("blink");
+
+    // Blink twice = 2 seconds, then hide
     setTimeout(() => {
+      cursor.classList.remove("blink");
       cursor.classList.add("hide");
-    }, 1200);
+    }, 2000);
   }
 }
 
