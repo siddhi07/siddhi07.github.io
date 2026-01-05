@@ -386,3 +386,16 @@ p{color:rgba(233,238,252,.84)}
   .project-grid{ grid-template-columns: 1fr; }
   .project-tile img{ height: 220px; }
 }
+
+/* Cursor Animation */
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  color: var(--accent);
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
