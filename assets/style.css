@@ -67,11 +67,12 @@ h1,h2,h3{
   font-family:Sora, Inter, system-ui;
   letter-spacing:-.4px;
 }
-h1{
-  font-size: clamp(2.1rem, 3.3vw, 3.0rem);
-  line-height:1.1;
-  margin:0;
+h1 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 600;   /* lighter */
+  letter-spacing: -0.3px;
 }
+
 .accent{
   background: linear-gradient(90deg, var(--accent), var(--accent2));
   -webkit-background-clip:text;
@@ -391,11 +392,16 @@ p{color:rgba(233,238,252,.84)}
 .cursor {
   display: inline-block;
   margin-left: 2px;
-  animation: blink 1s infinite;
   color: var(--accent);
+  animation: blink 1s steps(1) infinite;
+}
+
+.cursor.hide {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 @keyframes blink {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
+  50% { opacity: 0; }
 }
