@@ -286,23 +286,24 @@ p{color:rgba(233,238,252,.84)}
   transform: scale(1.08);
 }
 
-.tile-overlay{
-  position:absolute;
-  left:0; right:0; bottom:0;
-  padding: 14px;
-  background: linear-gradient(180deg, transparent, rgba(0,0,0,.72));
+.tile-text{
+  padding: 12px 14px;
 }
 
 .tile-title{
   font-family: Sora, Inter, system-ui;
   font-weight: 750;
+  font-size: 1rem;
+  color: var(--text);
 }
+
 .tile-sub{
   margin-top: 4px;
-  color: rgba(233,238,252,.75);
+  font-size: .9rem;
   font-weight: 650;
-  font-size: .92rem;
+  color: rgba(233,238,252,.65);
 }
+
 
 /* Modal */
 .modal{
