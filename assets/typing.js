@@ -10,10 +10,9 @@ function type() {
     index++;
     setTimeout(type, 80);
   } else {
-    // Start blinking AFTER typing finishes
     cursor.classList.add("blink");
 
-    // Blink twice = 2 seconds, then hide
+    // blink twice (2s), then fade out
     setTimeout(() => {
       cursor.classList.remove("blink");
       cursor.classList.add("hide");
